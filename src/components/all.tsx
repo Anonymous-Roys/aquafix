@@ -112,7 +112,7 @@ const TroutAquaFixDashboard: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-blue-50 p-6">
-      <style jsx>{`
+      {/* <style tsx>{`
         @keyframes swim {
           0% { transform: translateX(-20px); }
           100% { transform: translateX(calc(100vw + 20px)); }
@@ -124,7 +124,7 @@ const TroutAquaFixDashboard: React.FC = () => {
         .ripple {
           animation: ripple 2s infinite;
         }
-      `}</style>
+      `}</style> */}
 
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-8">
