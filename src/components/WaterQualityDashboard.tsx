@@ -25,14 +25,14 @@ export const WaterQualityDashboard = () => {
           dangerThreshold={1.5}
           warningThreshold={1.0}
         />
-        {/* <WaterQualityCard 
-          title="Dissolved Oxygen"
-          value={waterParams.dissolvedOxygen}
-          unit="mg/L"
-          idealRange={[6, 9]}
-          dangerThreshold={4.0}
+        <WaterQualityCard 
+          title="Turbidity"
+          value={waterParams.turbidity}
+          unit="NTU"
+          idealRange={[0, 5]}
+          dangerThreshold={10.0}
           warningThreshold={5.0}
-        /> */}
+        />
         <WaterQualityCard 
           title="Temperature"
           value={waterParams.temperature}
