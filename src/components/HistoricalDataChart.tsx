@@ -35,7 +35,7 @@ const HistoricalDataChart = () => {
     const fetchHistoricalData = async () => {
       setIsLoading(true);
       try {
-        const response = await axios.get(`http://YOUR_BACKEND_IP:5000/api/sensor-data/history?range=${timeRange}`);
+        const response = await axios.get(`https://aquafix-backend.onrender.com/api/sensor-data/history?range=${timeRange}`);
         formatChartData(response.data);
       } catch (error) {
         console.error('Error fetching historical data:', error);
