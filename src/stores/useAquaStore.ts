@@ -59,7 +59,7 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
-const API_URL = 'http://YOUR_BACKEND_IP:5000/api';
+const API_URL = 'https://aquafix-backend.onrender.com/api';
 
 interface WaterParams {
   pH: number;
