@@ -11,10 +11,8 @@ import {
   Tooltip,
   Legend,
   TimeScale,
-  ChartOptions,
-  ChartData,
-  TimeUnit,
 } from 'chart.js';
+import type { ChartOptions, TimeUnit, ChartData } from 'chart.js';
 import 'chartjs-adapter-date-fns';
 
 // Register ChartJS components
