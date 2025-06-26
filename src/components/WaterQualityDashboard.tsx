@@ -3,8 +3,15 @@ import { WaterQualityCard } from './WaterQualityCard';
 import HistoricalDataChart from './HistoricalDataChart';
 
 export const WaterQualityDashboard = () => {
-  const { waterParams } = useAquaStore();
+  const { waterParams = {}, fetchSensorData } = useAquaStore();
   
+  const safeParams = {
+    pH: 7.0,
+    ammonia: 0,
+    turbidity: 0,
+    temperature: 20,
+    ...waterParams
+  };
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-lg shadow p-4">
