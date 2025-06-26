@@ -4,6 +4,12 @@ export const TroutHealthPanel = () => {
   const { waterParams } = useAquaStore();
   
   const getHealthStatus = () => {
+    if (
+      waterParams.ammonia === undefined ||
+      waterParams.dissolvedOxygen === undefined
+    ) {
+      return { status: 'Unknown', color: 'gray', emoji: '❓' };
+    }
     if (waterParams.ammonia > 1.5 || waterParams.dissolvedOxygen < 4) 
       return { status: 'Poor', color: 'red', emoji: '❗' };
     if (waterParams.ammonia > 1.0 || waterParams.dissolvedOxygen < 5) 
