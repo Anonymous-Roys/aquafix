@@ -47,13 +47,13 @@ export const WaterQualityDashboard = () => {
           <div className='md:col-span-2'>
             <WaterQualityCard
               title="DO"
-              value={dissolvedOxygen}
+              value={waterParams.dissolvedOxygen ?? dissolvedOxygen}
               unit="mg/L"
               idealRange={[6.5, 8]}
               dangerThreshold={5.5}
               warningThreshold={6.0}
               isCalculated={true}
-              isCritical={dissolvedOxygen < 5.5}
+              isCritical={(waterParams.dissolvedOxygen ?? dissolvedOxygen) < 5.5}
             />
           </div>
           <WaterQualityCard
