@@ -1,7 +1,7 @@
 
 
 // Mock store hook for demo
-const useAquaStore = () => ({ fishCount: 156 });
+const useAquaStore = () => ({ fishCount: 100 });
 
 export const Navbar = () => {
   const { fishCount } = useAquaStore();

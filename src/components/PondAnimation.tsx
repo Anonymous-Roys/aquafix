@@ -16,6 +16,18 @@ const Fish = ({ index }: { index: number }) => {
       { x: 200, y: 70 + Math.random() * 70 },
       { x: 320, y: 90 + Math.random() * 50 }
     ],
+    [
+      { x: -10, y: 60 + Math.random() * 80 },
+      { x: 10, y: 80 + Math.random() * 60 },
+      { x: 200, y: 70 + Math.random() * 70 },
+      { x: 430, y: 90 + Math.random() * 50 }
+    ],
+    [
+      { x: -20, y: 60 + Math.random() * 80 },
+      { x: 100, y: 80 + Math.random() * 60 },
+      { x: 100, y: 70 + Math.random() * 70 },
+      { x: 220, y: 90 + Math.random() * 50 }
+    ],
     // Path 2: Right to left
     [
       { x: 320, y: 70 + Math.random() * 80 },
@@ -260,7 +272,7 @@ export const PondAnimation = ({ fishCount, waterFlow, aeration }: PondAnimationP
         ))}
 
         {/* Fish */}
-        {Array.from({ length: Math.min(fishCount, 10) }).map((_, i) => (
+        {Array.from({ length: Math.min(fishCount, 100) }).map((_, i) => (
           <Fish key={i} index={i} />
         ))}
 

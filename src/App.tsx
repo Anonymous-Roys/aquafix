@@ -93,7 +93,7 @@ function App() {
       <main className="flex-1 container mx-auto p-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
         <section className="space-y-6">
           <PondAnimation 
-            fishCount={14} 
+            fishCount={100} 
             waterFlow={waterParams.turbidity > 5 ? 0.9 : 0.5}
             aeration={(waterParams?.dissolvedOxygen ?? 0) < 6 ? true : false}
           />
